@@ -25,7 +25,6 @@ func outputResultBmi(bmi float64) {
 }
 
 func calculateBmi(userWeight, userHeight float64) float64 {
-	// рост вводится в сантиметрах → переводим в метры
 	heightMeters := userHeight / 100
 	result := userWeight / math.Pow(heightMeters, IMT_POWER)
 	return result
